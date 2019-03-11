@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.proneucon.mysimplebluetoothappdemo">
 
+    <!-- Nutzen von BT -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- Konfigurieren von BT -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- ACCESS_COARSE_LOCATION benötigt -> für weitere Einstellungen -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

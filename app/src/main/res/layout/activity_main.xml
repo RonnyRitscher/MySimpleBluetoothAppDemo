@@ -11,13 +11,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:onClick="turnOn"
-        android:text="turn on"
+        android:text="@string/turn_on"
         app:layout_constraintEnd_toStartOf="@+id/btn_turn_off"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_bt_activated" />
 
     <Button
         android:id="@+id/btn_turn_off"
@@ -26,7 +25,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:onClick="turnOff"
-        android:text="turn off"
+        android:text="@string/turn_off"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_turn_on"
         app:layout_constraintTop_toTopOf="@+id/btn_turn_on" />
@@ -36,13 +35,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:onClick="getVisible"
-        android:text="get visible"
+        android:onClick="setVisible"
+        android:text="@string/get_visible"
         app:layout_constraintEnd_toStartOf="@+id/btn_list_devices"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_turn_on" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btn_list_devices"
@@ -50,8 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:onClick="listDivices"
-        android:text="list devices"
+        android:onClick="listDevices"
+        android:text="@string/list_devices"
         app:layout_constraintEnd_toStartOf="@+id/btn_saerch_devices"
         app:layout_constraintStart_toEndOf="@+id/btn_get_visible"
         app:layout_constraintTop_toTopOf="@+id/btn_get_visible" />
@@ -63,7 +61,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:onClick="searchDevices"
-        android:text="search Devices"
+        android:text="@string/search_devices"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_list_devices"
         app:layout_constraintTop_toTopOf="@+id/btn_list_devices" />
@@ -77,6 +75,45 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tv_bt_activated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/bluetooth_aktivieren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/bluetooth_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_turn_on" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="List of Devices"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_get_visible" />

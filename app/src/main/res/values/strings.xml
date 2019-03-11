@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MySimpleBluetoothAppDemo</string>
+    <string name="turn_on">turn on</string>
+    <string name="turn_off">turn off</string>
+    <string name="search_devices">search Devices</string>
+    <string name="list_devices">list devices</string>
+    <string name="get_visible">get visible</string>
+    <string name="bluetooth_devices">Bluetooth Devices</string>
+    <string name="bluetooth_aktivieren">Bluetooth aktivieren</string>
 </resources>
